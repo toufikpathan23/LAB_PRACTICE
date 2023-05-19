@@ -18,10 +18,16 @@ public class DataStore implements Serializable {
 	//to store student details in persistent storage
 	public static void storeDeatils(Map<String,Student> students) throws FileNotFoundException, IOException
 	{
+		// Read existing data from the file, if any
+		
+		System.out.println("Students bofore storing back to file.....");
+		students.forEach((k,v)->System.out.println(v));
+		
 		try(
-				ObjectOutputStream o=new ObjectOutputStream(new FileOutputStream("test")); ){
+				ObjectOutputStream o=new ObjectOutputStream(new FileOutputStream("test") )){
 			
-			o.writeObject(students);
+			o.writeObject(students); // Write the merged data back to the file
+			
 			
 		}
 	}
