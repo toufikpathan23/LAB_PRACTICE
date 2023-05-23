@@ -1,0 +1,59 @@
+<html>
+    <body>
+        <form action="registration" method="post">
+            <table>
+                <tbody>
+                    <tr>
+                        <td><label for="nam">Name</label></td>
+                        <td><input type="text" name="name" id="nam" placeholder="Enter name" required autofocus minlength="3" maxlength="15"/></td>
+                    </tr>
+                    <tr>
+                        <td><label for="">Adress</label></td>
+                        <td><textarea rows="5" cols="20"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td>booking date</td>
+                        <td><input type="date"  /></td>
+                    </tr>
+                    <tr>
+                        <td>Gender</td>
+                        <td><input type="radio" name="gender" id="gender" value="male"/><label for="gender">Male</label>
+                        <input type="radio" name="gender2" id="gender1" value="female"/><label for="gender1">Female</label></td>
+                    </tr>
+                    <tr>
+                        <td>Degree</td>
+                        <td>
+                            <input type="radio" name="degree" id="be" value="BE"><label for="be">BE</label>
+                            <input type="radio" name="degree" id="Btech" value="Btech"><label for="Btech">Btech</label>
+                            <input type="radio" name="degree" id="mtch" value="mtch"><label for="mtch">Mtech</label>
+                            <input type="radio" name="degree" id="ME" value="ME"><label for="ME">ME</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Skills</td>
+                        <td>
+                            <input type="checkbox" name="skills" id="Java" value="Java"><label for="Java">Java</label>
+                            <input type="checkbox" name="skills" id="C++" value="C++"><label for="C++">C++</label><br>
+                            <input type="checkbox" name="skills" id="OS" value="OS"><label for="OS">OS</label>
+                            <input type="checkbox" name="skills" id="DBMS" value="DBMS"><label for="DBMS">DBMS</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="place">Location</label></td>
+                        <td><select name="place" id="place">
+                            <option type="text" name="select" id="select">------select-----</option>
+                            <option type="text" name="Mumbai" id="Mumbai" selected>Mumbai</option>
+                            <option type="text" name="Pune" id="Pune" >Pune</option>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td><button type="submit" name="Submit" id="Submit">Submit</button>
+                        <button type="reset" name="cancel" id="cancel">Cancel</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </form>
+        
+    </body>
+</html>
