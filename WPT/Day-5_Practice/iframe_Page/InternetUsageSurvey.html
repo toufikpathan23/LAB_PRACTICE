@@ -1,0 +1,129 @@
+<html>
+    <head>
+        <h2 align="center">Internet Survey</h2>
+        <style>
+            
+            #field
+            {
+              margin-left: auto;
+              margin-right: auto;
+            }
+
+            .table {
+    border-collapse: collapse;
+    
+}
+
+.td {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    
+}
+.td2{
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-left: 20px;
+}
+.field{
+            width: 50%;
+            margin-left: 22%;
+        }
+        </style>
+    </head>
+    <fieldset style="width:fit-content" class="field" id="field">
+        <h2>Internet Usage Survey</h2>
+    <body>
+        <form>
+        <pre>The survey is being conduct conducted to help identify the Internet usage pattern of our customers.
+Please take a few moments to complete and submit this short form.Than You for ypur cooperation.
+        </pre>
+        <table  class="table">
+            <tbody>
+                <tr>
+                    <td class="td">
+                        What type of Internet connection do youhave?
+                    </td>
+                    <td class="td2"><select type="text" name="connection" id="connection">
+                        <option>Dial-up</option>
+                        <option>DSL</option>
+                        <option>High Speed Cable</option>
+                        <option>Other</option>
+                    </select></td>
+                </tr>
+                
+                <tr>
+                    <td>(Select one)</td>
+                    
+                </tr>
+                <tr>
+                    <td class="td">
+                        What type of computer do you use most at home?
+                    </td>
+                    <td class="td2"><input type="radio" name="comp" id="comp">Desktop</input>
+                        <input type="radio" name="comp" id="comp">Laptop</input></td>
+                </tr>
+                <tr>
+                    <td class="td">How would you desribe your main reason for using the Internet?</td>
+                    <td class="td2"><input type="radio" name="int" id="int">To do work-related activities</input><br>
+                        <input type="radio" name="comp" id="comp">To do school-related activities</input><br>
+                        <input type="radio" name="comp" id="comp">for intertainment purposes</input><br>
+                        <input type="radio" name="comp" id="comp">other activities</input></td>
+                </tr>
+                <tr>
+                    <td class="td"><fieldset><legend>Types of sites visited</legend>
+                        <pre> What types of web sites do you access most often?
+
+<input type="checkbox">Self Improvement</input>
+<input type="checkbox">Entertainment</input>
+<input type="checkbox">News and Sports</input>
+<input type="checkbox">References</input>
+<input type="checkbox">Email</input></pre>
+                    </fieldset></td>
+                    <td class="td2"><fieldset><legend>Time spent using Internet</legend>
+                        <pre> During an average week, how long do you spend online?
+
+<input type="checkbox">0-3 Hours</input>
+<input type="checkbox">4-6 Hours</input>
+<input type="checkbox">7-10 hours</input>
+<input type="checkbox">11-14 Hours</input>
+<input type="checkbox">15+Hours</input></pre>
+                    </fieldset></td>
+
+                </tr>
+                <tr>
+                    <td>Please comment on your opinions concerning Internet privacy and safety:</td>
+                </tr>
+            </tbody>
+        </table>
+        <textarea style="width:450px;height:150px" ></textarea><br>
+        
+        <table class="table">
+            <tbody>
+                <tr>
+                    <td width="460px" class="td">
+                        First Name:<input type="text" name="name" id="name" />
+                    </td>
+                    <td class="td2">Last Name:<input type="text" name="name" id="lname"/></td>
+                </tr><br>
+                <tr >
+                    <td width="480px" class="td">
+                        Age:<input type="text" name="name" id="aname"/>
+                    </td>
+                    <td class="td2">
+                        Zip Code:<input type="text" name="name" id="zname"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td align="right" style="padding-right: 20px;">
+                        <button type="submit"  id="info1"value="info1">Click to Submit</input>
+                    </td>
+                    <td align="left" class="td2">
+                        <button type="reset" id="info" value="info">Clear Form</input>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </form>
+    </body>
+</fieldset>
+</html>

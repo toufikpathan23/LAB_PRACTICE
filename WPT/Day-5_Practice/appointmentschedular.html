@@ -1,0 +1,43 @@
+<html>
+    <head>
+        
+         <style>
+            .row{
+                box-shadow: -3px 3px;
+            }
+            #mn{
+                width:15%
+            }
+            #email{
+                width:20%
+            }
+         </style>
+    </head>
+    <body>
+        <h1>Appointment Schedular</h1>
+        <fieldset>
+            <legend width="30%">Personal information</legend>
+            <form>
+                <br>
+                Name<br><input type="text" class="row" name="nm" id="nm" ><br><br>
+               
+                Telephone Number<br><input class="row" type="text" name="nm" id="mn"><br><br>
+                E-mail adress<br><input  class="row" type="email" name="nm" id="email"><br><br>
+                Date of birth<br><input class="row" type="date" name="nm" id="db" ><br><br>
+            </form>
+        </fieldset>
+        <fieldset>
+            <legend width="30%">Appointment Request</legend>
+            <form>
+                <br>
+                What is the reason for your visit?<br><input type="text" style="width: 20%;" class="row" name="nm" id="nm" ><br><br>
+               
+                Current pain level<br><input type="range" name="nm" id="mn" max="10" min="0" value="5" oninput="rangeValue.innerText = this.value"><label id="rangeValue"></label><br><br>
+                Prefered date<br><input class="row" type="date" name="nm" id="db" ><br><br>
+                Prefered time<br><input class="row" type="time" name="tm" id="tm" ><br><br>
+            </form>
+        </fieldset>
+        <br>
+        <button type="submit" class="row">Submit</button>
+    </body>
+</html>
