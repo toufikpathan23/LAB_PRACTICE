@@ -1,0 +1,30 @@
+<html>
+    <body>
+        <header>Products Table</header>
+        <form action="/addformproduct" method="get">
+            <button type="submit" name="add" id="add" value="add">Add Product</button><br>
+            <table border="2">
+                    <thead>
+                        <tr>
+                            <th>Pid</th>
+                            <th>Pname</th>
+                            <th>Pprice</th>
+                        </tr>
+                    </thead>
+                <tbody>
+                    <% for(var i=0;i<pdata.length;i++) 
+                    {%>
+                    <tr>
+                        <td><%=pdata[i].pid%></td>
+                        <td><%=pdata[i].pname%></td>
+                        <td><%=pdata[i].pprice%></td>
+                        <td><a href="/update-prod" name="upd" id="upd">edit</a>/
+                            <a href="/delete-prod" name="del" id="del">delete</a>
+                        </td>
+                    </tr>
+                    <%}%>
+                </tbody>
+            </table>
+        </form>
+    </body>
+</html>
